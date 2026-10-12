@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portofolio Alivia Putri Azizah</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ICON -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <style>
+
+        /* =========================
+           WARNA WEBSITE
+        ========================= */
+
+        :root {
+            --blue: #79b8ff;
+            --blue-dark: #3478d4;
+            --blue-light: #c5e3ff;
+            --blue-soft: #eaf4ff;
+            --background: #f6faff;
+            --white: #ffffff;
+            --text: #26364d;
+            --muted: #708198;
+            --border: #dceafa;
+        }
+
+        /* =========================
+           PENGATURAN DASAR
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        section {
+            padding: 90px 8%;
+            scroll-margin-top: 80px;
+        }
+
+        .blue {
+            color: var(--blue-dark);
+        }
+
+        .section-heading {
+            margin-bottom: 30px;
+        }
+
+        .eyebrow {
+            color: var(--blue-dark);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            font-size: clamp(27px, 4vw, 38px);
+            margin-top: 8px;
+            line-height: 1.4;
+        }
+
+        .section-subtitle {
+            color: var(--muted);
+            margin-top: 10px;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 20px;
+            padding: 18px 8%;
+
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            color: var(--blue-dark);
+            font-size: 23px;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 12px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--blue-dark);
+        }
+
+        /* =========================
+           HOME
+        ========================= */
+
+        #home {
+            min-height: 85vh;
+
+            display: grid;
+            grid-template-columns: 1.4fr 0.8fr;
+            align-items: center;
+            gap: 50px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 35%,
+                    #dceeff 0,
+                    transparent 35%
+                ),
+                var(--background);
+        }
+
+        .hello {
+            display: inline-block;
+
+            padding: 8px 15px;
+            margin-bottom: 20px;
+
+            color: var(--blue-dark);
+            background: var(--blue-soft);
+
+            border: 1px solid var(--border);
+            border-radius: 30px;
+
+            font-size: 12px;
+        }
+
+        .hero-title {
+            font-size: clamp(35px, 5vw, 57px);
+            line-height: 1.2;
+            margin-bottom: 22px;
+        }
+
+        .hero-text {
+            max-width: 600px;
+            color: var(--muted);
+            margin-bottom: 28px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            background: var(--blue-dark);
+            color: white;
+
+            padding: 12px 22px;
+            border-radius: 10px;
+
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #245da8;
+            transform: translateY(-3px);
+        }
+
+        .hero-art {
+            width: min(300px, 100%);
+            aspect-ratio: 1;
+
+            display: grid;
+            place-items: center;
+            justify-self: center;
+
+            border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+
+            background: linear-gradient(
+                145deg,
+                #b5dcff,
+                #6c9df5
+            );
+
+            box-shadow: 0 15px 50px #79b8ff44;
+
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .hero-art i {
+            font-size: 100px;
+            color: white;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        /* =========================
+           KARTU UMUM
+        ========================= */
+
+        .card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 25px;
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--blue);
+            box-shadow: 0 12px 30px #79b8ff20;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: var(--blue-dark);
+        }
+
+        .muted {
+            color: var(--muted);
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 25px;
+            align-items: start;
+        }
+
+        .profile-list {
+            list-style: none;
+        }
+
+        .profile-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .profile-list li:last-child {
+            border-bottom: none;
+        }
+
+        .profile-list strong {
+            display: block;
+            color: var(--muted);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .profile-list span {
+            overflow-wrap: anywhere;
+        }
+
+        /* =========================
+           PENDIDIKAN
+        ========================= */
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .education-card .period {
+            display: inline-block;
+            color: var(--blue-dark);
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .education-card p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* =========================
+           ORGANISASI
+        ========================= */
+
+        #organization {
+            background: #eef6ff;
+        }
+
+        .organization-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .organization-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 25px;
+
+            transition: 0.3s;
+        }
+
+        .organization-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--blue);
+            box-shadow: 0 12px 30px #79b8ff25;
+        }
+
+        .organization-icon {
+            width: 55px;
+            height: 55px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--blue-soft);
+            color: var(--blue-dark);
+
+            border-radius: 15px;
+            font-size: 24px;
+
+            margin-bottom: 18px;
+        }
+
+        .organization-card h3 {
+            font-size: 17px;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .organization-role {
+            display: inline-block;
+
+            background: var(--blue-soft);
+            color: var(--blue-dark);
+
+            border-radius: 20px;
+            padding: 5px 13px;
+
+            font-size: 12px;
+            font-weight: 600;
+
+            margin-bottom: 15px;
+        }
+
+        .organization-card p {
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.9;
+        }
+
+        /* =========================
+           SKILLS
+        ========================= */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin: 18px 0;
+            color: var(--muted);
+        }
+
+        .skill-list i {
+            color: var(--blue-dark);
+            margin-top: 5px;
+        }
+
+        .skill-list strong {
+            display: block;
+            color: var(--text);
+        }
+
+        /* =========================
+           PRESTASI
+        ========================= */
+
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .achievement-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .achievement-icon {
+            color: var(--blue-dark);
+            font-size: 25px;
+            min-width: 28px;
+        }
+
+        .achievement-card h3 {
+            font-size: 15px;
+            color: var(--text);
+        }
+
+        .achievement-card p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-top: 10px;
+
+            color: var(--blue-dark);
+            background: var(--blue-soft);
+
+            border-radius: 20px;
+            padding: 4px 12px;
+
+            font-size: 11px;
+        }
+
+        /* =========================
+           KONTAK
+        ========================= */
+
+        #contact {
+            background:
+                radial-gradient(
+                    circle at 50% 0,
+                    #dceeff 0,
+                    transparent 55%
+                ),
+                var(--background);
+        }
+
+        .contact-container {
+            max-width: 750px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            padding: 12px 17px;
+
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+
+            transition: 0.3s;
+        }
+
+        .contact-btn:hover {
+            background: var(--blue-dark);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            text-align: center;
+            padding: 25px 8%;
+
+            background: #eaf4ff;
+            color: var(--muted);
+
+            border-top: 1px solid var(--border);
+            font-size: 12px;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 850px) {
+
+            nav {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            #home {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding-top: 65px;
+            }
+
+            .hero-art {
+                width: 210px;
+                grid-row: 1;
+            }
+
+            .hero-art i {
+                font-size: 75px;
+            }
+
+            .hero-text {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .about-grid,
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            section {
+                padding: 70px 6%;
+            }
+
+            .education-grid,
+            .organization-grid,
+            .achievement-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                gap: 10px;
+            }
+
+            .nav-links a {
+                font-size: 10px;
+            }
+
+            .card,
+            .organization-card {
+                padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <nav>
+        <a href="#home" class="logo">ALIVIA.</a>
+
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#organization">ORGANIZATION</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#achievements">ACHIEVEMENTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <!-- =========================
+             HOME
+        ========================= -->
+
+        <section id="home">
+
+            <div class="hero-content">
+
+                <span class="hello">
+                    <i class="fa-solid fa-star"></i>
+                    Selamat datang di portofolio saya
+                </span>
+
+                <h1 class="hero-title">
+                    Halo, saya
+                    <span class="blue">Alivia Putri Azizah</span>
+                </h1>
+
+                <p class="hero-text">
+                    Mahasiswa S1 Pendidikan Teknologi Informasi
+                    di Universitas Negeri Surabaya. Saya tertarik
+                    pada teknologi, desain kreatif, dan dunia pendidikan.
+                    Saya senang belajar hal baru, bekerja sama dalam tim,
+                    serta mengembangkan ide menjadi karya yang bermanfaat.
+                </p>
+
+                <a href="#about" class="button">
+                    Kenali Saya
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+
+            </div>
+
+            <div class="hero-art">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================= -->
+
+        <section id="about">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">01 / Tentang Saya</span>
+
+                <h2 class="section-title">
+                    Mengenal <span class="blue">Saya</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Profil singkat dan informasi akademik saya.
+                </p>
+
+            </div>
+
+            <div class="about-grid">
+
+                <article class="card">
+
+                    <h3>Halo, salam kenal!</h3>
+
+                    <p class="muted">
+                        Saya Alivia Putri Azizah, mahasiswa Program Studi
+                        Pendidikan Teknologi Informasi, Fakultas Teknik,
+                        Universitas Negeri Surabaya. Saya memiliki
+                        ketertarikan pada teknologi informasi, desain grafis,
+                        dan pembuatan website.
+                    </p>
+
+                    <br>
+
+                    <p class="muted">
+                        Saya tertarik menjadi seorang pendidik karena
+                        percaya bahwa pendidikan memiliki peran penting
+                        dalam membangun masa depan generasi muda.
+                        Bagi saya, menjadi pendidik bukan hanya tentang
+                        menyampaikan ilmu, tetapi juga membimbing,
+                        menginspirasi, dan membantu setiap individu
+                        mengembangkan potensinya.
+                    </p>
+
+                    <br>
+
+                    <p class="muted">
+                        Melalui bidang Pendidikan Teknologi Informasi,
+                        saya ingin menggabungkan dunia pendidikan dengan
+                        kemajuan teknologi untuk menciptakan pembelajaran
+                        yang kreatif, menarik, dan bermanfaat.
+                    </p>
+
+                </article>
+
+
+                <aside class="card">
+
+                    <h3>Biografi Ringkas</h3>
+
+                    <ul class="profile-list">
+
+                        <li>
+                            <strong>Nama Lengkap</strong>
+                            <span>Alivia Putri Azizah</span>
+                        </li>
+
+                        <li>
+                            <strong>NIM</strong>
+                            <span>26050974042</span>
+                        </li>
+
+                        <li>
+                            <strong>Program Studi</strong>
+                            <span>Pendidikan Teknologi Informasi</span>
+                        </li>
+
+                        <li>
+                            <strong>Fakultas</strong>
+                            <span>Teknik</span>
+                        </li>
+
+                        <li>
+                            <strong>Universitas</strong>
+                            <span>Universitas Negeri Surabaya</span>
+                        </li>
+
+                        <li>
+                            <strong>Tahun Masuk</strong>
+                            <span>2026</span>
+                        </li>
+
+                    </ul>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EDUCATION
+        ========================= -->
+
+        <section id="education">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">02 / Perjalanan Akademik</span>
+
+                <h2 class="section-title">
+                    Riwayat <span class="blue">Pendidikan</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Perjalanan pendidikan saya dari sekolah dasar
+                    hingga perguruan tinggi.
+                </p>
+
+            </div>
+
+
+            <div class="education-grid">
+
+                <article class="card education-card">
+
+                    <span class="period">2026 – Sekarang</span>
+
+                    <h3>Universitas Negeri Surabaya</h3>
+
+                    <p>
+                        S1 Pendidikan Teknologi Informasi,
+                        Fakultas Teknik.
+                    </p>
+
+                </article>
+
+
+                <article class="card education-card">
+
+                    <span class="period">2023 – 2026</span>
+
+                    <h3>SMA Negeri 4 Sidoarjo</h3>
+
+                    <p>
+                        Menempuh pendidikan menengah atas dan
+                        mengikuti kegiatan pengembangan diri.
+                    </p>
+
+                </article>
+
+
+                <article class="card education-card">
+
+                    <span class="period">2022 – 2023</span>
+
+                    <h3>SMP Plus Sabilur Rosyad Sidoarjo</h3>
+
+                    <p>
+                        Melanjutkan pendidikan menengah pertama.
+                    </p>
+
+                </article>
+
+
+                <article class="card education-card">
+
+                    <span class="period">2021 – 2022</span>
+
+                    <h3>MTs YPM 2 Sarirogo</h3>
+
+                    <p>
+                        Menempuh pendidikan menengah pertama.
+                    </p>
+
+                </article>
+
+
+                <article class="card education-card">
+
+                    <span class="period">2020 – 2021</span>
+
+                    <h3>SMP Bilingual Terpadu</h3>
+
+                    <p>
+                        Menempuh pendidikan menengah pertama.
+                    </p>
+
+                </article>
+
+
+                <article class="card education-card">
+
+                    <span class="period">2014 – 2020</span>
+
+                    <h3>SD Negeri Jumputrejo</h3>
+
+                    <p>
+                        Menyelesaikan pendidikan sekolah dasar.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ORGANISASI
+        ========================= -->
+
+        <section id="organization">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">03 / Pengalaman</span>
+
+                <h2 class="section-title">
+                    Organisasi & <span class="blue">Ekstrakurikuler</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Kegiatan yang membantu saya mengembangkan
+                    keterampilan, kreativitas, dan kerja sama.
+                </p>
+
+            </div>
+
+
+            <div class="organization-grid">
+
+                <!-- PRAMUKA -->
+
+                <article class="organization-card">
+
+                    <div class="organization-icon">
+                        <i class="fa-solid fa-campground"></i>
+                    </div>
+
+                    <h3>Dewan Galang Pramuka</h3>
+
+                    <span class="organization-role">Anggota</span>
+
+                    <p>
+                        Mengikuti kegiatan kepramukaan untuk melatih
+                        kedisiplinan, tanggung jawab, kemandirian,
+                        kepemimpinan, dan kerja sama dalam kelompok.
+                    </p>
+
+                </article>
+
+
+                <!-- BULU TANGKIS -->
+
+                <article class="organization-card">
+
+                    <div class="organization-icon">
+                        <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+                    </div>
+
+                    <h3>Bulu Tangkis</h3>
+
+                    <span class="organization-role">Anggota</span>
+
+                    <p>
+                        Mengikuti kegiatan olahraga bulu tangkis
+                        untuk meningkatkan fokus, ketangkasan,
+                        sportivitas, dan konsistensi dalam berlatih.
+                    </p>
+
+                </article>
+
+
+                <!-- TAKRAW -->
+
+                <article class="organization-card">
+
+                    <div class="organization-icon">
+                        <i class="fa-solid fa-volleyball"></i>
+                    </div>
+
+                    <h3>Sepak Takraw</h3>
+
+                    <span class="organization-role">Anggota</span>
+
+                    <p>
+                        Berpartisipasi dalam kegiatan sepak takraw
+                        untuk melatih kelincahan, koordinasi tubuh,
+                        konsentrasi, disiplin, dan kerja sama tim.
+                    </p>
+
+                </article>
+
+
+                <!-- TARI -->
+
+                <article class="organization-card">
+
+                    <div class="organization-icon">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+
+                    <h3>Seni Tari</h3>
+
+                    <span class="organization-role">Anggota</span>
+
+                    <p>
+                        Mengembangkan kreativitas dan kemampuan
+                        mengekspresikan diri melalui gerakan tari,
+                        sekaligus melatih kekompakan, kepercayaan diri,
+                        dan apresiasi terhadap seni budaya.
+                    </p>
+
+                </article>
+
+
+                <!-- KIR -->
+
+                <article class="organization-card">
+
+                    <div class="organization-icon">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+
+                    <h3>Kelompok Ilmiah Remaja (KIR)</h3>
+
+                    <span class="organization-role">Anggota</span>
+
+                    <p>
+                        Mengembangkan rasa ingin tahu, kemampuan
+                        berpikir kritis, kreativitas, dan keterampilan
+                        mencari informasi melalui kegiatan ilmiah.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================= -->
+
+        <section id="skills">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">04 / Keahlian Saya</span>
+
+                <h2 class="section-title">
+                    My <span class="blue">Skills</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Kemampuan yang saya miliki dan terus kembangkan.
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <article class="card">
+
+                    <h3>
+                        <i class="fa-solid fa-code blue"></i>
+                        Hard Skills
+                    </h3>
+
+                    <ul class="skill-list">
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+
+                            <div>
+                                <strong>Web Development</strong>
+                                Dasar HTML dan CSS untuk membuat website.
+                            </div>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+
+                            <div>
+                                <strong>Microsoft Office</strong>
+                                Menggunakan Word, Excel, dan PowerPoint.
+                            </div>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+
+                            <div>
+                                <strong>Desain Grafis</strong>
+                                Membuat poster dan desain visual menggunakan Canva.
+                            </div>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+
+                            <div>
+                                <strong>AI Tools</strong>
+                                Memanfaatkan AI untuk membantu proses belajar.
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+                <article class="card">
+
+                    <h3>
+                        <i class="fa-solid fa-users blue"></i>
+                        Soft Skills
+                    </h3>
+
+                    <ul class="skill-list">
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+
+                            <div>
+                                <strong>Komunikasi</strong>
+                                Menyampaikan ide dan informasi dengan jelas.
+                            </div>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+
+                            <div>
+                                <strong>Kerja Sama Tim</strong>
+                                Berkolaborasi dalam kegiatan dan tugas kelompok.
+                            </div>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+
+                            <div>
+                                <strong>Kreativitas</strong>
+                                Mengembangkan ide untuk desain dan proyek.
+                            </div>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+
+                            <div>
+                                <strong>Adaptasi</strong>
+                                Terbuka untuk belajar dan mencoba hal baru.
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ACHIEVEMENTS
+        ========================= -->
+
+        <section id="achievements">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">05 / Pencapaian</span>
+
+                <h2 class="section-title">
+                    My <span class="blue">Achievements</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Prestasi dan pengalaman yang pernah saya raih.
+                </p>
+
+            </div>
+
+
+            <div class="achievement-grid">
+
+                <article class="card achievement-card">
+
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+
+                    <div>
+                        <h3>Juara 1 Talent Video Troistcup</h3>
+
+                        <p>
+                            Penghargaan atas partisipasi sebagai talent
+                            dalam video Troistcup.
+                        </p>
+
+                        <span class="tag">Juara 1</span>
+                    </div>
+
+                </article>
+
+
+                <article class="card achievement-card">
+
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <div>
+                        <h3>Siswa Eligible</h3>
+
+                        <p>
+                            Terpilih sebagai siswa eligible di sekolah.
+                        </p>
+
+                        <span class="tag">Akademik</span>
+                    </div>
+
+                </article>
+
+
+                <article class="card achievement-card">
+
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-masks-theater"></i>
+                    </div>
+
+                    <div>
+                        <h3>Juara 1 Maskot Sekolah Terbaik</h3>
+
+                        <p>
+                            Pencapaian dalam kegiatan maskot sekolah.
+                        </p>
+
+                        <span class="tag">Juara 1</span>
+                    </div>
+
+                </article>
+
+
+                <article class="card achievement-card">
+
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+
+                    <div>
+                        <h3>Juara 1 Flashmob Sekolah Terbaik</h3>
+
+                        <p>
+                            Berpartisipasi dalam penampilan flashmob sekolah.
+                        </p>
+
+                        <span class="tag">Juara 1</span>
+                    </div>
+
+                </article>
+
+
+                <article class="card achievement-card">
+
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-check-to-slot"></i>
+                    </div>
+
+                    <div>
+                        <h3>Juara 2 Bilik Suara Terbaik</h3>
+
+                        <p>
+                            Pencapaian dalam pembuatan bilik suara sekolah.
+                        </p>
+
+                        <span class="tag">Juara 2</span>
+                    </div>
+
+                </article>
+
+
+                <article class="card achievement-card">
+
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+
+                    <div>
+                        <h3>Juara 1 Desain Kostum Maskot</h3>
+
+                        <p>
+                            Penghargaan untuk desain kostum maskot sekolah terbaik.
+                        </p>
+
+                        <span class="tag">Juara 1</span>
+                    </div>
+
+                </article>
+
+
+                <article class="card achievement-card">
+
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+
+                    <div>
+                        <h3>Juara 1 Poster Makanan</h3>
+
+                        <p>
+                            Penghargaan untuk poster makanan sekolah terbaik.
+                        </p>
+
+                        <span class="tag">Juara 1</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================= -->
+
+        <section id="contact">
+
+            <div class="contact-container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">06 / Hubungi Saya</span>
+
+                    <h2 class="section-title">
+                        Mari <span class="blue">Terhubung!</span>
+                    </h2>
+
+                </div>
+
+                <p class="muted">
+                    Terima kasih telah mengunjungi portofolio saya.
+                    Saya terbuka untuk belajar, berdiskusi, dan
+                    berkolaborasi dalam kegiatan kreatif maupun
+                    proyek teknologi.
+                </p>
+
+
+                <div class="contact-links">
+
+                    <a href="mailto:aliviaputri625@gmail.com"
+                        class="contact-btn">
+
+                        <i class="fa-solid fa-envelope"></i>
+                        Email
+
+                    </a>
+
+
+                    <a href="https://github.com/Alivia-Putri-Azizah"
+                        class="contact-btn"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+
+                    </a>
+
+
+                    <a href="https://www.linkedin.com/in/alivia-putri-azizah-4052b8441/"
+                        class="contact-btn"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-linkedin"></i>
+                        LinkedIn
+
+                    </a>
+
+
+                    <a href="https://www.instagram.com/__aliviaa.putri/"
+                        class="contact-btn"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Alivia Putri Azizah
+        </p>
+
+        <p>
+            Pendidikan Teknologi Informasi · Universitas Negeri Surabaya
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        // Animasi sederhana ketika halaman dimuat
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            console.log("Portofolio Alivia berhasil dimuat!");
+
+        });
+
+    </script>
+
+</body>
+
+</html>
